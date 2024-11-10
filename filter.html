@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/products.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="w-full px-[16px] mt-[50px]">
+        <div class="max-w-[375px] m-auto">
+            <div class="mb-[24]">
+                <div class="h-[32px] mb-[24px] flex items-center">
+                    <i class="bx bxs-chevron-left text-[24px]"></i>
+                    <h3 class="text-[24px] font-[500] leading-[32px] ml-[16px]">Filters</h3>
+                </div>
+                <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Price
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                    </div>
+                    <div class="h-[100px] mt-[24px]">
+                        <ul class="price-input grid grid-cols-2 mb-[16px]">
+                            <li class="">
+                                <div class="field">
+                                    <p class="text-[14px] font-[400] text-[#A4A4A4] lesding-[24px] mb-[8px]">From</p>                                
+                                    <input type="number" class="input-min w-[110px] py-[8px] md:pr-[56px] sm:pr-[46px] pl-[8px] rounded-[3px]" value="2500"  style="border: 0.5px solid #9F9F9F">
+                                </div>                                
+                            </li>
+                           
+                            <li class="">
+                                <div class="field">
+                                    <p class="text-[14px] font-[400] text-[#A4A4A4] lesding-[24px] mb-[8px]">To</p>
+                                    <input type="number"  class="input-max w-[110px] py-[8px] md:pr-[56px] sm:pr-[46px] pl-[8px] rounded-[3px]" value="7500"  style="border: 0.5px solid #9F9F9F">  
+                                </div>                                
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input" class="w-full h-[12px] flex items-center" id="filter">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            </div>  
+                        </div>
+                        
+                    </div>
+            </div>
+            <div>
+                <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Brand
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                </div>
+                <div class="mt-[24px]">
+                    <div class="smooth-scroll w-full max-h-[330px] overflow-y-auto pr-[24px]">
+                        <div class="h-[40px] flex items-center bg-[#F5F5F5] pl-[18px] rounded-[8px]">
+                            <i class='bx bx-search text-[24px] text-[#989898]' ></i>
+                            <input type="text" placeholder="Search" class="outline-none bg-[#F5F5F5] overflow-hidden">
+                        </div>
+                        <ul class="mt-[16px]">
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Apple<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Samsung<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Xiaomi<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Poco<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Oppo<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Honor<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Motrola<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Nokia<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">Realme<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Built-in memory
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                </div>
+                <div class="smooth-scroll w-full max-h-[200px] overflow-y-auto pr-[24px] mt-[24px]">
+                    <div class="h-[40px] flex items-center bg-[#F5F5F5] pl-[18px] rounded-[8px]">
+                        <i class='bx bx-search text-[24px] text-[#989898]' ></i>
+                        <input type="text" placeholder="Search" class="outline-none bg-[#F5F5F5] overflow-hidden">
+                    </div>
+                    <ul class="mt-[16px]">
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">16GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li>
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">32GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li>
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">64GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li>
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">128GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li>
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">256GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li> 
+                        <li class="h-[24px] flex items-center mb-[8px]">
+                            <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                            <h3 class="text-[15px] font-[500]">512GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                        </li>                                                
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between h-[48px] items-center my-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Protection class
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                </div>
+                <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Screen diagonal
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                </div>
+                <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Screen type
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                </div>
+                <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                    <h4 class="text-[18px] font-[500]">
+                        Battery capacity
+                    </h4>
+                    <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                </div>
+                <button class="h-[56px] w-[100%] mb-[48px] bg-black text-[16px] font-[500] text-white rounded-[7px]">Apply</button>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-black text-white py-[100px] px-[5%] mt-[-10px] m-auto max-w-[375px]">
+        <section>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                <div class="">
+                    <div class="flex justify-center text-center md:text-left">
+                        <div>
+                            <h2 class="mb-[27px]"><img src="./images/logo/foot.png" alt="" class="w-[100px] mx-auto md:mx-0"></h2>
+                            <p class="text-[#CFCFCF]">
+                                We are a residential interior design firm located
+                                in Portland. Our boutique-studio offers more than
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex md:justify-center text-center md:text-left justify-center">
+                        <div class="">
+                            <h2 class="mb-2 font-semibold text-[20px]">Services</h2>
+                            <ul class="w-full">
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Bonus program</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Gift cards</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Credit and payment</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Non-cash account</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Service contracts</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="">
+                    <div class="flex md:justify-center text-center md:text-left justify-start ">
+                        <div class="w-[100%]">
+                            <h2 class="font-semibold mb-2 text-[20px]">Assistance to the buyer</h2>
+                            <ul class="">
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Find an order</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Terms of delivery</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Exchange and return of goods</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Guarantee</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Frequently asked questions</a>
+                                </li>
+                                <li class="w-[100%]">
+                                    <a href="#" class="text-[#CFCFCF]">Terms of use of the site</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class=" py-[60px] sm:py-[60px] lg:py-[30px]">
+                <ul class="flex  justify-center md:justify-start">
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Twitter.png" alt=""></a></li>
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Facebook.png" alt=""></a></li>
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Tiktok.png" alt=""></a></li>
+                    <li class=""><a href=""><img src="./images/icons/Instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    
+
+    <script src="./js/products.js"></script>
+</body>
+</html>

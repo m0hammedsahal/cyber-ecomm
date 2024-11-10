@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/products.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <header class="h-[80px] px-[5%] flex justify-between lg:justify-center items-center ">
+            <div class="hidden lg:flex  items-center ">
+                <h1 class="mr-8">
+                    <a href="#">
+                        <img src="./images/logo/mobile-logo.png" alt="" class="w-[100px] h">
+                    </a>
+                </h1>
+                <div class=" flex items-center relative mr-[30px] ">
+                    <i class='bx bx-search absolute top-[15px] left-[20px] text-[#989898]'></i>
+                    <input type="text" placeholder="Search " class="px-[50px]   py-[10px] bg-[#F5F5F5] rounded-lg outline-none">
+                    
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="flex lg:hidden justify-between items-center w-full ">
+                <div>
+                    <h1 class="mr-8">
+                        <a href="#">
+                            <img src="./images/logo/mobile-logo.png" alt="" class="w-[100px] h">
+                        </a>
+                    </h1>
+                </div>
+                
+                <div class="hidden  md:flex items-center relative mr-[30px] ">
+                    <i class='bx bx-search absolute top-[15px] left-[20px] text-[#989898]'></i>
+                    <input type="text" placeholder="Search " class="px-[50px]   py-[10px] bg-[#F5F5F5] rounded-lg outline-none">
+                    
+                </div>
+                <div class="flex-hidden ">
+                    <i class='bx bx-menu text-[40px] font-bold'></i>
+                </div>
+            </div>
+            
+            <div class="hidden lg:flex w-[60%]">
+                <ul class=" flex justify-between w-full">
+                    <li class=""><a href="" class="font-semibold ">Home</a></li>
+                    <li class=""><a href="" class="text-[#989898] ">About</a></li>
+                    <li class=""><a href="" class="text-[#989898] ">Contact Us</a></li>
+                    <li class=""><a href="" class="text-[#989898] ">Blog</a></li>
+                    <li class=""><a href=""><img src="./images/icons/Favorites.png" alt=""></a></li>
+                    <li class=""><a href=""><img src="./images/icons/Cart.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/icons/User.png" alt=""></a></li>
+                </ul>
+            </div>
+        <!-- end mobile -->
+        </header>
+        <header class="px-[5%] bg-[#2E2E2E] hidden lg:flex">
+            <ul class="flex py-[16px] w-full">
+                <li class="w-[15%]  flex justify-center  border-r border-[#989898]">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/Phones.png" alt="" class="mr-[11px]">Phones</a>
+                </li>
+                <li class="w-[20%]  flex justify-center  border-r border-[#989898]">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/Computers.png" alt="" class="mr-[11px]">Computers</a>
+                </li>
+                <li class="w-[20%]  flex justify-center  border-r border-[#989898]">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/smart.png" alt="" class="mr-[11px]">Smart Watches</a>
+                </li>
+                <li class="w-[20%]  flex justify-center  border-r border-r-[#989898]">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/Cameras.png" alt="" class="mr-[11px]" >Cameras</a>
+                </li>
+                <li class="w-[20%]  flex justify-center  border-r border-[#989898]">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/Headphones.png" alt="" class="mr-[11px]">Headphoness</a>
+                </li>
+                <li class="w-[20%]  flex justify-center ">
+                    <a href="" class="text-[#989898] flex"><img src="./images/icons/smart.png" alt="" class="mr-[11px]">Gaming</a>
+                </li>
+            </ul>
+
+        </header>
+    </section>
+    
+    <section class="lg:px-[60px] sm:px-[40px] px-4">        
+        <div class="h-[100px]">
+            <ul class="flex justify-between h-full w-1/4 items-center">
+                <li class="flex items-center mr-[10px]">                    
+                    <h3 class="mr-[16px] text-[16px] font-[500] text-[#A4A4A4]">Home</h3>
+                    <i class='bx bx-chevron-right text-[#A4A4A4] mt-[5px] text-[24px]' ></i>
+                </li>
+                <li class="flex items-center mr-[10px]">
+                    <h3 class="mr-[16px] text-[16px] font-[500] text-[#A4A4A4]">Catalog</h3>
+                    <i class='bx bx-chevron-right text-[#A4A4A4] mt-[5px] text-[24px]' ></i>
+                </li>
+                <li>
+                    <h3 class="text-[16px] font-[500]">Smartphones</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- filter -->
+
+    <section class="flex justify-between lg:px-[60px] sm:px-[40px] px-4">
+        <div class="hidden sm:flex">
+            <div class="md:w-[224px] sm:w-[180px]">
+                <div class="mb-[24]">
+                    <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Price
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                        </div>
+                    <div class="h-[100px] mt-[24px]">
+                        <ul class="price-input grid grid-cols-2 gap-[10px] mb-[16px]">
+                            <li class="">
+                                <div class="field">
+                                    <p class="text-[14px] font-[400] text-[#A4A4A4] lesding-[24px] mb-[8px]">From</p>                                
+                                    <input type="number" class="input-min sm:w-[110px] w-[48%] py-[8px] rounded-[3px] relative right-[12px]" value="2500"  style="border: 0.5px solid #9F9F9F">
+                                </div>                                
+                            </li>
+                           
+                            <li class="">
+                                <div class="field">
+                                    <p class="text-[14px] font-[400] text-[#A4A4A4] lesding-[24px] mb-[8px]">To</p>
+                                    <input type="number"  class="input-max sm:w-[110px] w-[48%] py-[8px] rounded-[3px] relative right-[12px]" value="7500"  style="border: 0.5px solid #9F9F9F">  
+                                </div>                                
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input" class="w-full h-[12px] flex items-center" id="filter">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            </div>  
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Brand
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                    </div>
+                    <div class="mt-[24px]">
+                        <div class="smooth-scroll w-full max-h-[330px] overflow-y-auto pr-[24px]">
+                            <div class="h-[40px] flex items-center bg-[#F5F5F5] pl-[18px] rounded-[8px]">
+                                <i class='bx bx-search text-[24px] text-[#989898]' ></i>
+                                <input type="text" placeholder="Search" class="outline-none bg-[#F5F5F5] overflow-hidden">
+                            </div>
+                            <ul class="mt-[16px]">
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Apple<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Samsung<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Xiaomi<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Poco<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Oppo<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Honor<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Motrola<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Nokia<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                                <li class="h-[24px] flex items-center mb-[8px]">
+                                    <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                    <h3 class="text-[15px] font-[500]">Realme<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between h-[48px] items-center" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Built-in memory
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-270 text-[24px]' ></i>
+                    </div>
+                    <div class="smooth-scroll w-full max-h-[200px] overflow-y-auto pr-[24px] mt-[24px]">
+                        <div class="h-[40px] flex items-center bg-[#F5F5F5] pl-[18px] rounded-[8px]">
+                            <i class='bx bx-search text-[24px] text-[#989898]' ></i>
+                            <input type="text" placeholder="Search" class="outline-none bg-[#F5F5F5] overflow-hidden">
+                        </div>
+                        <ul class="mt-[16px]">
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">16GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">32GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">64GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">128GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">256GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li> 
+                            <li class="h-[24px] flex items-center mb-[8px]">
+                                <input type="checkbox" class="h-[14px] w-[14px] rounded-[3px] mr-[8px]">
+                                <h3 class="text-[15px] font-[500]">512GB<span class="text-[12px] font-[400] text-[#989898] ml-[4px]">110</span></h3>                                
+                            </li>                                                
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between h-[48px] items-center my-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Protection class
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                    </div>
+                    <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Screen diagonal
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                    </div>
+                    <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Screen type
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                    </div>
+                    <div class="flex justify-between h-[48px] items-center mb-[24px]" style="border-bottom: 0.5px solid #B5B5B5">
+                        <h4 class="text-[18px] font-[500]">
+                            Battery capacity
+                        </h4>
+                        <i class='bx bxs-chevron-right bx-rotate-90 text-[24px]' ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- products -->
+
+        <div class="max-w-[830px] sm:ml-[40px] text-center">
+            <ul class="md:justify-between sm:flex  hidden mb-[24px]">
+                <li class="flex items-center sm:w-full">
+                    <p class="text-[16px] font-[500] text-[#6C6C6C] mr-[3px]">Selected Products:</p>
+                    <span class="text-[20px] font-[500] text-[#000000]">85</span>
+                </li>
+                <li>
+                    <select class="py-[12px] pl-[14px] pr-[124px] outline-none rounded-[8px]" style="border: 0.5px solid #D4D4D4">
+                        <option value="" class="text-[15px] font-[400]">By rating</option>                        
+                    </select>
+                </li>
+            </ul>
+            <ul class="grid grid-cols-1 sm:hidden mb-[24px]">
+                <div class="grid grid-cols-2 gap-[20px] justify-between mb-[24px] w-full">
+                    <li>
+                        <div class="w-full py-[12px] pl-[8px] pr-[80px] outline-none rounded-[8px]" style="border: 0.5px solid #D4D4D4">
+                            <span class=" text-[14px] font-[400]">Filter</span>                        
+                        </div>
+                    </li>
+                    <li>
+                        <select class="w-full py-[12px] pl-[8px] outline-none rounded-[8px]" style="border: 0.5px solid #D4D4D4">
+                            <option value="" class="text-[14px] font-[400]">By rating</option>                        
+                        </select>
+                    </li> 
+                </div>                
+                <li class="flex items-center ml-[24px]">
+                    <p class="text-[16px] font-[500] text-[#6C6C6C] mr-[3px]">Selected Products:</p>
+                    <span class="text-[20px] font-[500] text-[#000000]">85</span>
+                </li>                
+            </ul>
+            <div class="">
+                <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-[10px]">
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone1.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone2.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone3.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone1.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone2.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone3.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone1.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone2.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                    <li class="h-[432px] bg-[#F6F6F6] px-[14px] text-center rounded-[9px]">
+                        <div class="w-full flex justify-end pt-[24px] mb-[16px]"><i class='bx bx-heart text-[32px] font-[100] text-[#909090C4]' ></i></div>                        
+                        <img src="./images/products/phone3.png" alt="phone" class="w-[160px] h-[160px] m-auto">
+                        <p class="text-[14px] font-[500] leading-[24px] mt-[16px]">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+                        <span class="text-[24px] font-[600] leading-[24px] mt-[16px] inline-block w-full">$1437</span>
+                        <button class="w-[80%] mt-[16px] bg-[#000000] text-[#ffff] text-[14px] font-[500] leading-[24px] py-[12px] rounded-[8px]">Buy Now</button>
+                    </li>
+                </ul>
+
+                <!-- next page button -->
+
+                <div class="flex justify-center">
+                    <ul class="flex my-[40px]">
+                        <li class="mr-[10px]"><i class="bx bx-chevron-left text-[36px] font-[100]"></i></li>
+                        <li class="text-[16px] h-[32px] font-[500] leading-[24px] text-[#fff] py-[4px] px-[12px] rounded-[5px] bg-black mr-[10px]">1</li>
+                        <li class="text-[16px] h-[32px] font-[500] leading-[24px] py-[4px] px-[12px] rounded-[5px] bg-[#F6F6F6] mr-[10px]">2</li>
+                        <li class="text-[16px] h-[32px] font-[500] leading-[24px] py-[4px] px-[12px] rounded-[5px] bg-[#F6F6F6] mr-[10px]">3</li>
+                        <li class="text-[#737373] mr-[10px]">...</li>
+                        <li class="text-[16px] h-[32px] font-[500] leading-[24px] py-[4px] px-[12px] rounded-[5px] bg-[#F6F6F6] mr-[10px]">12</li>
+                        <li class="text-[16px] h-[32px] font-[500] leading-[24px] mr-[10px]"><i class="bx bx-chevron-right text-[36px] font-[100]"></i></li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-black text-white py-[100px] px-[5%] mt-[-10px]">
+        <section>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                <div class="">
+                    <div class="flex justify-center text-center md:text-left">
+                        <div>
+                            <h2 class="mb-[27px]"><img src="./images/logo/foot.png" alt="" class="w-[100px] mx-auto md:mx-0"></h2>
+                            <p class="text-[#CFCFCF]">
+                                We are a residential interior design firm located
+                                in Portland. Our boutique-studio offers more than
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex md:justify-center text-center md:text-left justify-center">
+                        <div class="">
+                            <h2 class="mb-2 font-semibold text-[20px]">Services</h2>
+                            <ul class="w-full">
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Bonus program</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Gift cards</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Credit and payment</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Non-cash account</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Service contracts</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="">
+                    <div class="flex md:justify-center text-center md:text-left justify-start ">
+                        <div class="w-[100%]">
+                            <h2 class="font-semibold mb-2 text-[20px]">Assistance to the buyer</h2>
+                            <ul class="">
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Find an order</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Terms of delivery</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Exchange and return of goods</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Guarantee</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-[#CFCFCF]">Frequently asked questions</a>
+                                </li>
+                                <li class="w-[100%]">
+                                    <a href="#" class="text-[#CFCFCF]">Terms of use of the site</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class=" py-[60px] sm:py-[60px] lg:py-[30px]">
+                <ul class="flex  justify-center md:justify-start">
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Twitter.png" alt=""></a></li>
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Facebook.png" alt=""></a></li>
+                    <li class="mr-[56px]"><a href=""><img src="./images/icons/Tiktok.png" alt=""></a></li>
+                    <li class=""><a href=""><img src="./images/icons/Instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="/js/products.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
